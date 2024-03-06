@@ -11,7 +11,38 @@ colorlinks: true
 links-as-notes: true
 ---
 
+
 It's very easy to make some words **bold** and other words *italic* with Markdown. You can even [link to Google!](http://www.google.com)
+
+![Cute Pup][pup-pic]{#fig:pup}
+
+[![](http://unsplash.it/50/50?image=1000)](http://unsplash.it/50/50?image=1000)
+
+[<img src="http://unsplash.it/50/50?image=1000">](http://unsplash.it/50/50?image=1000)
+
+
+<img src="images/ricky.jpg" width="200" alt="Ricky!">
+
+<figure id="fig:ricky" class="centered-figure">
+  <img src="/images/ricky.jpg" alt="Rick eating a pepperoni" />
+  <figcaption>Rick eating a pepperoni</figcaption>
+</figure>
+
+<style>
+.centered-figure {
+  text-align: center;
+}
+
+.centered-figure img {
+  width: 50%;
+  border: 1px solid red;
+  border-radius: 5px;
+}
+
+.centered-figure figcaption {
+  font-style: italic;
+}
+</style>
 
 Super lorem ipsum dolor sit amet, consectetur adipiscing elit [@knuth1986]. Vestibulum in consequat velit. Donec consectetur dolor sed tincidunt vehicula. Ut tincidunt tellus nisi[^1], eget semper dolor faucibus in. Vestibulum pellentesque nulla vel nisl tempor, at lobortis lacus auctor. Sed gravida tincidunt dui placerat imperdiet [@einstein1905].
 
@@ -45,6 +76,11 @@ Suspendisse et bibendum lorem. Fusce a elit diam. Aenean ullamcorper enim nec ex
 
 Nam eget nibh laoreet, efficitur eros quis, rhoncus tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nullam eget fermentum quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed lobortis lacus. Nunc eu quam vitae quam interdum cursus. Donec semper libero eu tempor dapibus. Sed a augue vulputate, cursus felis luctus, imperdiet libero. Praesent aliquam aliquet fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac nisl lobortis, tempus massa at, auctor orci ([@fig:pepperoni]). Mauris felis ipsum, mollis eget quam vel, dignissim posuere odio. Praesent ultrices blandit ante, quis blandit tortor lobortis sed. 
 
+| Centered | Right-Align | Left-align | default |
+|:--------:|------------:|:-----------|---------|
+| Snickers |           2 | AAA        | zed     |
+| Prudence |           8 | BBB        | xed     |
+
 # Section dos
 
 Suspendisse et bibendum lorem. Fusce a elit diam. Aenean ullamcorper enim nec ex sodales, quis euismod nulla consequat. Pellentesque semper, diam eget blandit molestie, nunc tellus interdum enim, et ultrices odio arcu nec felis. Praesent faucibus tincidunt vestibulum. Fusce laoreet risus velit, non lobortis dolor cursus a. Fusce magna ipsum, viverra in lacus non, sagittis varius est.
@@ -52,6 +88,8 @@ Suspendisse et bibendum lorem. Fusce a elit diam. Aenean ullamcorper enim nec ex
 Nam eget nibh laoreet, efficitur eros quis, rhoncus tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nullam eget fermentum quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed lobortis lacus. Nunc eu quam vitae quam interdum cursus. Donec semper libero eu tempor dapibus. Sed a augue vulputate, cursus felis luctus, imperdiet libero. Praesent aliquam aliquet fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac nisl lobortis, tempus massa at, auctor orci ([@fig:pepperoni]). Mauris felis ipsum, mollis eget quam vel, dignissim posuere odio. Praesent ultrices blandit ante, quis blandit tortor lobortis sed. 
 
 
-![Ricky eating a good pepperoni](images/ricky.jpg){#fig:pepperoni}
+![Ricky eating a good pepperoni](images/ricky.jpg "this is ricky"){#fig:pepperoni}
+
+[pup-pic]: http://unsplash.it/500/500?image=1012
 
 ## Reference

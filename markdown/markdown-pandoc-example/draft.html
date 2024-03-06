@@ -196,6 +196,36 @@ Markdown, VSCodium and pandoc</h1>
 <p>It’s very easy to make some words <strong>bold</strong> and other
 words <em>italic</em> with Markdown. You can even <a
 href="http://www.google.com">link to Google!</a></p>
+<figure id="fig:pup">
+<img src="http://unsplash.it/500/500?image=1012" alt="Cute Pup" />
+<figcaption>Figure 1: Cute Pup</figcaption>
+</figure>
+<p><a href="http://unsplash.it/50/50?image=1000"><img
+src="http://unsplash.it/50/50?image=1000" /></a></p>
+<p><a
+href="http://unsplash.it/50/50?image=1000"><img src="http://unsplash.it/50/50?image=1000"></a></p>
+<p><img src="images/ricky.jpg" width="200" alt="Ricky!"></p>
+<figure id="fig:ricky" class="centered-figure">
+<img src="/images/ricky.jpg" alt="Rick eating a pepperoni" />
+<figcaption>
+Rick eating a pepperoni
+</figcaption>
+</figure>
+<style>
+.centered-figure {
+  text-align: center;
+}
+
+.centered-figure img {
+  width: 50%;
+  border: 1px solid red;
+  border-radius: 5px;
+}
+
+.centered-figure figcaption {
+  font-style: italic;
+}
+</style>
 <p>Super lorem ipsum dolor sit amet, consectetur adipiscing elit <span
 class="citation" data-cites="knuth1986">(<a href="#ref-knuth1986"
 role="doc-biblioref">Knuth, 1986</a>)</span>. Vestibulum in consequat
@@ -276,9 +306,33 @@ quam interdum cursus. Donec semper libero eu tempor dapibus. Sed a augue
 vulputate, cursus felis luctus, imperdiet libero. Praesent aliquam
 aliquet fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing
 elit. Suspendisse ac nisl lobortis, tempus massa at, auctor orci (<a
-href="#fig:pepperoni">fig. 1</a>). Mauris felis ipsum, mollis eget quam
+href="#fig:pepperoni">fig. 2</a>). Mauris felis ipsum, mollis eget quam
 vel, dignissim posuere odio. Praesent ultrices blandit ante, quis
 blandit tortor lobortis sed.</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Centered</th>
+<th style="text-align: right;">Right-Align</th>
+<th style="text-align: left;">Left-align</th>
+<th>default</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Snickers</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">AAA</td>
+<td>zed</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Prudence</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">BBB</td>
+<td>xed</td>
+</tr>
+</tbody>
+</table>
 <h1 data-number="2" id="section-dos"><span
 class="header-section-number">2</span> Section dos</h1>
 <p>Suspendisse et bibendum lorem. Fusce a elit diam. Aenean ullamcorper
@@ -295,12 +349,13 @@ quam interdum cursus. Donec semper libero eu tempor dapibus. Sed a augue
 vulputate, cursus felis luctus, imperdiet libero. Praesent aliquam
 aliquet fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing
 elit. Suspendisse ac nisl lobortis, tempus massa at, auctor orci (<a
-href="#fig:pepperoni">fig. 1</a>). Mauris felis ipsum, mollis eget quam
+href="#fig:pepperoni">fig. 2</a>). Mauris felis ipsum, mollis eget quam
 vel, dignissim posuere odio. Praesent ultrices blandit ante, quis
 blandit tortor lobortis sed.</p>
 <figure id="fig:pepperoni">
-<img src="images/ricky.jpg" alt="Ricky eating a good pepperoni" />
-<figcaption>Figure 1: Ricky eating a good pepperoni</figcaption>
+<img src="images/ricky.jpg" title="this is ricky"
+alt="Ricky eating a good pepperoni" />
+<figcaption>Figure 2: Ricky eating a good pepperoni</figcaption>
 </figure>
 <h2 class="unnumbered" id="reference">Reference</h2>
 <div id="refs" class="references csl-bib-body hanging-indent"
