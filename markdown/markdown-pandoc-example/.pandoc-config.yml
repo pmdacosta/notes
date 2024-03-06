@@ -1,0 +1,12 @@
+---
+bibliography: ["bibliography.bib"]
+csl: "apa-single-spaced.csl"
+title: "Setting up a scholarly writing environment with Markdown, VSCodium and pandoc"
+link-citations: true
+linkReferences: true
+nameInLink: true
+lang: en-GB
+papersize: a4
+colorlinks: true
+links-as-notes: true
+---

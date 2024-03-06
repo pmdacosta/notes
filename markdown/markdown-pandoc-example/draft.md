@@ -1,17 +1,3 @@
----
-bibliography: ["bibliography.bib"]
-csl: "apa-single-spaced.csl"
-title: "Setting up a scholarly writing environment with Markdown, VSCodium and pandoc"
-link-citations: true
-linkReferences: true
-nameInLink: true
-lang: en-GB
-papersize: a4
-colorlinks: true
-links-as-notes: true
----
-
-
 It's very easy to make some words **bold** and other words *italic* with Markdown. You can even [link to Google!](http://www.google.com)
 
 ![Cute Pup][pup-pic]{#fig:pup}
